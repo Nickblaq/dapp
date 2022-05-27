@@ -28,7 +28,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.0",
   paths: {
     artifacts: "./src/artifacts",
   },
@@ -52,7 +52,7 @@ module.exports = {
       url: process.env.TOMO_PROVIDER_URL || "https://rpc.testnet.tomochain.com",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    matictestnet: {
+    mumbai: {
       chainId: 80001,
       url:
         process.env.MATIC_PROVIDER_URL || "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/polygon/mumbai",

@@ -7,9 +7,7 @@ export const injected = new InjectedConnector({
 });
 
 const RPC_URLS: { [chainId: number]: string } = {
-  1: process.env.NEXT_PUBLIC_RPC_URL_1,
-  3: process.env.NEXT_PUBLIC_RPC_URL_3,
-  4: process.env.NEXT_PUBLIC_RPC_URL_4,
+  80001: 'https://polygon-mumbai.g.alchemy.com/v2/SgsWGUCCPklV5N2sWSBINZp206y4s5wt',
   1337: "http://127.0.0.1:8545/",
 };
 

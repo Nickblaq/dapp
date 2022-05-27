@@ -57,21 +57,25 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ContextUpgradeable__factory>;
     getContractFactory(
-      name: "Box",
+      name: "Ownable",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Box__factory>;
+    ): Promise<Contracts.Ownable__factory>;
     getContractFactory(
-      name: "BoxV2",
+      name: "IERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.BoxV2__factory>;
+    ): Promise<Contracts.IERC20__factory>;
     getContractFactory(
-      name: "Greeter",
+      name: "Holdings",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Greeter__factory>;
+    ): Promise<Contracts.Holdings__factory>;
     getContractFactory(
-      name: "ITManToken",
+      name: "IERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ITManToken__factory>;
+    ): Promise<Contracts.IERC20__factory>;
+    getContractFactory(
+      name: "Presale",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Presale__factory>;
 
     getContractAt(
       name: "OwnableUpgradeable",
@@ -129,25 +133,30 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.ContextUpgradeable>;
     getContractAt(
-      name: "Box",
+      name: "Ownable",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.Box>;
+    ): Promise<Contracts.Ownable>;
     getContractAt(
-      name: "BoxV2",
+      name: "IERC20",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.BoxV2>;
+    ): Promise<Contracts.IERC20>;
     getContractAt(
-      name: "Greeter",
+      name: "Holdings",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.Greeter>;
+    ): Promise<Contracts.Holdings>;
     getContractAt(
-      name: "ITManToken",
+      name: "IERC20",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.ITManToken>;
+    ): Promise<Contracts.IERC20>;
+    getContractAt(
+      name: "Presale",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Presale>;
 
     // default types
     getContractFactory(
