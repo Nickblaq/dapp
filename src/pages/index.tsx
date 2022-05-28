@@ -26,7 +26,7 @@ const App = function () {
       </div>
       
         <div className="container min-h-screen mx-auto">
-          <Demo />   
+          <Demo />    
           </div>
     </>
   );
